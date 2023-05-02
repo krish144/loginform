@@ -1,0 +1,49 @@
+.RightSiderBar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+
+.updates{
+     background-color: #fff;  
+     padding: 30px 25px;
+     border-radius: 12px;
+}
+
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.update-img>img{
+    width: 50px;
+}
+
+.update-details{
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 5px;
+}
+
+.time{
+    margin-top: 0px;
+    color: #555;
+    line-height: 7px;
+}
+
+@media(max-width:1220px){
+    .RightSiderBar{
+        justify-content: flex-start;
+        grid-column: auto;
+    }
+    .update{
+        justify-content: start;
+        align-items:start;
+        margin-bottom: 2rem;
+    }
+    .update-details{
+        margin-top: -1%;
+    }
+}
